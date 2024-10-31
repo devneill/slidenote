@@ -1,6 +1,6 @@
 https://github.com/emilkowalski/vaul/assets/36730035/fdf8c5e8-ade8-433b-8bb0-4ce10e722516
 
-Slidenote is a scroll driven slide-out for React that can be used to increase your CTA conversion rate.
+Slidenote is a scroll driven slide-out for React that can be used to increase your landing page conversion rate.
 
 ## Usage
 
