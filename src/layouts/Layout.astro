@@ -22,8 +22,12 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
+	<div class="flex flex-col justify-between min-h-screen">
 		<slot />
+		<div class="p-6">
 		<ThemeToggle client:load />
+		</div>
+		</div>
 	</body>
 </html>
 
