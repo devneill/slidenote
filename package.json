@@ -33,6 +33,7 @@
     "typescript": "^5.6.3"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.9",
     "@sly-cli/sly": "^1.14.0"
   }
 }
