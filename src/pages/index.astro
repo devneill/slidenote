@@ -1,0 +1,31 @@
+---
+import { Button, buttonVariants } from '@/components/ui/button';
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<Layout title="Slidenote" description='A scroll driven popover for React.'>
+	<main>
+	<div class="pt-64 mx-auto max-w-2xl text-center">
+	<div class="flex flex-col">
+		<h1 class="text-5xl font-bold leading-tight tracking-tighter">Slidenote</h1>
+		<p class="font-light text-xl">A scroll driven popover for React.</p>
+		</div>
+		<div class="mt-6 flex gap-4 justify-center">
+		<Button>
+		Scroll
+		<!-- <Icon name="double-arrow-down" /> -->
+		</Button>
+		<a href="https://github.com/devneill/slidenote" class={buttonVariants({ variant: "secondary" })}>
+		GitHub
+		<Icon name="arrow-right" />
+		</a>
+		</div>
+		<div class="flex justify-center mt-2">
+		<a href="/getting-started" class={buttonVariants({ variant: "link" })}>
+		Documentation
+		</a>
+		</div>
+		</div>
+	</main>
+</Layout>
