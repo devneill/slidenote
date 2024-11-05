@@ -1,5 +1,0 @@
----
-'slidenote': patch
----
-
-Initial release
