@@ -1,0 +1,42 @@
+{
+  "name": "osstarter",
+  "version": "1.0.1",
+  "description": "A starter template for a TypeScript package",
+  "keywords": [
+    "typescript",
+    "template"
+  ],
+  "homepage": "https://github.com/devneill/osstarter",
+  "bugs": {
+    "url": "https://github.com/devneill/osstarter/issues"
+  },
+  "author": "Devon Neill <me@devneill.com> (https://devneill.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devneill/osstarter.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitest",
+    "build": "tsc",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "test": "vitest run",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run test",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.4",
+    "@changesets/cli": "^2.27.9",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}
