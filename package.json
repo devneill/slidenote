@@ -18,7 +18,8 @@
     "url": "git+https://github.com/devneill/slidenote.git"
   },
   "files": [
-    "dist"
+    "dist",
+    "style.css"
   ],
   "main": "dist/index.js",
   "type": "module",
@@ -34,11 +35,19 @@
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
   },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.16.4",
     "@changesets/cli": "^2.27.9",
+    "@types/react": "^18.3.12",
     "prettier": "^3.3.3",
     "typescript": "^5.6.3",
     "vitest": "^2.1.4"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.4"
   }
 }

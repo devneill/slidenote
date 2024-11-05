@@ -1,0 +1,33 @@
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.slide {
+  animation-timing-function: var(--ease-out-quad), var(--ease-in-quad);
+  animation-timeline: view();
+  animation-range: 20vh 30vh;
+  animation-fill-mode: backwards;
+  will-change: transform;
+}
+
+.left {
+  animation-name: slide-in-left;
+}
+
+.right {
+  animation-name: slide-in-right;
+}
