@@ -1,5 +1,11 @@
 # osstarter
 
+## 0.1.2
+
+### Patch Changes
+
+- 0d3c69a: Include styles
+
 ## 0.1.1
 
 ### Patch Changes

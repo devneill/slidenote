@@ -1,5 +1,0 @@
----
-'slidenote': patch
----
-
-Include styles

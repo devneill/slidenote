@@ -1,6 +1,6 @@
 {
   "name": "slidenote",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A scroll driven popover for React",
   "keywords": [
     "typescript",
@@ -26,7 +26,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitest",
-    "build": "tsc",
+    "build": "tsc && npm run copy-assets",
+    "copy-assets": "cp -r ./src/style.css ./style.css",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
