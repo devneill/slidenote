@@ -1,19 +1,21 @@
 {
-  "name": "osstarter",
-  "version": "1.0.1",
-  "description": "A starter template for a TypeScript package",
+  "name": "slidenote",
+  "version": "0.1.0",
+  "description": "A scroll driven popover for React",
   "keywords": [
     "typescript",
-    "template"
+    "react",
+    "scroll",
+    "popover"
   ],
-  "homepage": "https://github.com/devneill/osstarter",
+  "homepage": "https://github.com/devneill/slidenote",
   "bugs": {
-    "url": "https://github.com/devneill/osstarter/issues"
+    "url": "https://github.com/devneill/slidenote/issues"
   },
   "author": "Devon Neill <me@devneill.com> (https://devneill.com)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devneill/osstarter.git"
+    "url": "git+https://github.com/devneill/slidenote.git"
   },
   "files": [
     "dist"
