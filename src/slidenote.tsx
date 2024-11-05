@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from './utils.js';
-import 'style.css';
+import './style.css';
 import type { ComponentProps } from 'react';
 
 type SlidenoteProps = ComponentProps<'div'> & {

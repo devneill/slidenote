@@ -1,1 +1,1 @@
-export { Slidenote } from './slidenote.jsx';
+export { Slidenote } from './slidenote.js';
