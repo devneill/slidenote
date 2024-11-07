@@ -5,17 +5,24 @@ import type { ComponentProps } from 'react';
 
 type SlidenoteProps = ComponentProps<'div'> & {
   from: 'left' | 'right';
+  className?: string;
 };
 
-export function Slidenote({ from, children, ...rest }: SlidenoteProps) {
+export function Slidenote({
+  from,
+  className,
+  children,
+  ...rest
+}: SlidenoteProps) {
   return (
     <div
       className={cn(
-        'slide w-56 h-36 bg-secondary p-6 flex flex-col justify-between',
+        'slide',
         {
-          'left rounded-r-2xl': from === 'left',
-          'right rounded-l-2xl': from === 'right',
+          left: from === 'left',
+          right: from === 'right',
         },
+        className,
       )}
       {...rest}
     >
