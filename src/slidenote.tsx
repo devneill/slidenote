@@ -1,32 +1,40 @@
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { type ComponentProps } from 'react';
 import React from 'react';
 import { cn } from './utils.js';
-import './style.css';
-import type { ComponentProps } from 'react';
 
 type SlidenoteProps = ComponentProps<'div'> & {
-  from: 'left' | 'right';
+  from?: 'left' | 'right';
   className?: string;
 };
 
 export function Slidenote({
-  from,
+  from = 'right',
   className,
   children,
-  ...rest
 }: SlidenoteProps) {
+  const { scrollYProgress } = useScroll();
+  const smoothScrollProgress = useSpring(scrollYProgress, {
+    stiffness: 600,
+    damping: 90,
+  });
+
+  const range = from === 'right' ? [300, 0] : [-300, 0];
+  const translateX = useTransform(smoothScrollProgress, [0.7, 0.8], range);
+
   return (
-    <div
+    <motion.div
       className={cn(
-        'slide',
+        'fixed bottom-1/3',
         {
-          left: from === 'left',
-          right: from === 'right',
+          'left-0': from === 'left',
+          'right-0': from === 'right',
         },
         className,
       )}
-      {...rest}
+      style={{ x: translateX }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }
