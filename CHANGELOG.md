@@ -1,5 +1,11 @@
 # osstarter
 
+## 0.1.4
+
+### Patch Changes
+
+- 1761caa: Add support for custom styles
+
 ## 0.1.3
 
 ### Patch Changes
