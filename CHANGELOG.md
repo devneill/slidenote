@@ -1,5 +1,11 @@
 # osstarter
 
+## 0.1.5
+
+### Patch Changes
+
+- c6c940f: Switch to framer-motion for scroll ability
+
 ## 0.1.4
 
 ### Patch Changes

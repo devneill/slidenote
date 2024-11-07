@@ -1,6 +1,6 @@
 {
   "name": "slidenote",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A scroll driven popover for React",
   "keywords": [
     "typescript",
@@ -18,8 +18,7 @@
     "url": "git+https://github.com/devneill/slidenote.git"
   },
   "files": [
-    "dist",
-    "style.css"
+    "dist"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -39,9 +38,8 @@
   "scripts": {
     "dev": "vitest",
     "format": "prettier --write .",
-    "build": "npm run check-types && bunchee && npm run copy-assets",
+    "build": "npm run check-types && bunchee",
     "check-types": "tsc --noEmit",
-    "copy-assets": "cp -r ./src/style.css ./style.css",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "test": "vitest run",
@@ -50,19 +48,20 @@
     "prepublishOnly": "npm run ci"
   },
   "peerDependencies": {
-    "react": "^18.3.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.11",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.16.4",
     "@changesets/cli": "^2.27.9",
     "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.12",
     "bunchee": "^5.6.1",
     "prettier": "^3.3.3",
     "typescript": "^5.6.3",
     "vitest": "^2.1.4"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^2.5.4"
   }
 }
