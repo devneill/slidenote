@@ -1,6 +1,4 @@
-
 https://github.com/user-attachments/assets/6b81b040-52d6-48f2-a956-1cadde0e2a33
-
 
 [Slidenote](https://slidenote.devneill.com) is a scroll driven popover for React.
 Use it to increase your landing page conversion rate or increase subscriber sign ups from your blog post.
@@ -16,7 +14,7 @@ npm install slidenote
 Use the Slidenote in your app.
 
 ```tsx
-import { Slidenote } from "slidenote";
+import { Slidenote } from 'slidenote';
 
 function MyComponent() {
   return (
