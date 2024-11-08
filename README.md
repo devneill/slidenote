@@ -1,35 +1,31 @@
-https://github.com/user-attachments/assets/a815c88d-d2a0-44f7-ba5f-45f3ed2f9eb6
+https://github.com/user-attachments/assets/349e0343-3fe7-4a47-a14e-9b69495fdf1c
 
-Slidenote is a scroll driven slide-out for React that can be used to increase your landing page conversion rate.
+[Slidenote](https://slidenote.devneill.com) is a scroll driven popover for React.
+Use it to increase your landing page conversion rate or increase subscriber sign ups from your blog post.
 
 ## Usage
 
 To start using the library, install it in your project:,
 
 ```bash
-npm install vaul
+npm install slidenote
 ```
 
-Use the drawer in your app.
+Use the Slidenote in your app.
 
 ```jsx
-import { Drawer } from 'vaul';
+import { Slidenote } from 'slidenote';
 
 function MyComponent() {
   return (
-    <Drawer.Root>
-      <Drawer.Trigger>Open</Drawer.Trigger>
-      <Drawer.Portal>
-        <Drawer.Content>
-          <Drawer.Title>Title</Drawer.Title>
-        </Drawer.Content>
-        <Drawer.Overlay />
-      </Drawer.Portal>
-    </Drawer.Root>
+    <Slidenote className="bg-stone-100 rounded-l-xl shadow-lg flex flex-col gap-2 justify-between p-6">
+      <p>Tagline</p>
+      <a href="/">Call To Action</a>
+    </Slidenote>
   );
 }
 ```
 
 ## Documentation
 
-Find the full API reference and examples in the [documentation](https://devneill.com/ui/slidenote).
+Find the full API reference and examples in the [documentation](https://slidenote.devneill.com).
