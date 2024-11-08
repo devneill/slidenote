@@ -1,8 +1,4 @@
-
-
-
-https://github.com/user-attachments/assets/5274bc0f-e768-4638-9fcc-6820497c0b98
-
+https://github.com/user-attachments/assets/a815c88d-d2a0-44f7-ba5f-45f3ed2f9eb6
 
 Slidenote is a scroll driven slide-out for React that can be used to increase your landing page conversion rate.
 
