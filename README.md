@@ -1,4 +1,5 @@
-https://github.com/user-attachments/assets/47107e51-aca4-48e4-bcd1-21b9008774b2=
+
+https://github.com/user-attachments/assets/6b81b040-52d6-48f2-a956-1cadde0e2a33
 
 
 [Slidenote](https://slidenote.devneill.com) is a scroll driven popover for React.
