@@ -1,6 +1,4 @@
-
 https://github.com/user-attachments/assets/0b938b3e-3886-4a88-9fac-f1c4ea80cbab
-
 
 [Slidenote](https://slidenote.devneill.com) is a scroll driven popover for React.
 Use it to increase your landing page conversion rate or increase subscriber sign ups from your blog post.
