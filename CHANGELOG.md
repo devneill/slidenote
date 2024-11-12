@@ -1,5 +1,11 @@
 # osstarter
 
+## 0.1.7
+
+### Patch Changes
+
+- 38962e2: Test release action
+
 ## 0.1.6
 
 ### Patch Changes
