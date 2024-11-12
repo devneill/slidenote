@@ -19,7 +19,7 @@ export function Slidenote({
     damping: 90,
   });
 
-  const range = from === 'right' ? [300, 0] : [-300, 0];
+  const range = from === 'right' ? ['100%', '0%'] : ['-100%', '0%'];
   const translateX = useTransform(smoothScrollProgress, [0.7, 0.8], range);
 
   return (

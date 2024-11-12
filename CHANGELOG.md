@@ -1,5 +1,11 @@
 # osstarter
 
+## 0.1.6
+
+### Patch Changes
+
+- a547e1a: Use percentage for translation
+
 ## 0.1.5
 
 ### Patch Changes
