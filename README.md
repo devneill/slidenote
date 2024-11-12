@@ -14,11 +14,11 @@ npm install slidenote
 Use the Slidenote in your app.
 
 ```tsx
-import { Slidenote } from 'slidenote';
+import { Slidenote } from "slidenote";
 
 function MyComponent() {
   return (
-    <Slidenote className="fixed bottom-1/3 right-0 rounded-l-xl bg-white p-4 shadow-xl">
+    <Slidenote className="rounded-l-xl bg-white p-4 shadow-xl">
       {/*
         Your content here
       */}
